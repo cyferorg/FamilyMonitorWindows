@@ -3,6 +3,7 @@
 <meta charset="utf-8" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.11.2/css/v4-shims.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 <title>Family Monitor</title>
 </head>
 
@@ -18,9 +19,8 @@
 </ul>
 <a id="Introduction"></a>
 <h2>Introduction</h2>
-<p>Family Monitor is a very simple app that works alongside Google Maps. Most of the configuration that Family Monitor uses is set through the Google Maps interface either via the Maps browser interface or the Maps app on your mobile device. Firstly, ask your family to allow Google Maps to share their locations with you (<A href="#Mapssetup">see below</A>) and then use Google Maps to define locations that will be used to configure Family Monitor alerts. For example, the location of your home and of your children's schools.</p>
-<p>Within Family Monitor define the alerts you require which are in the form of:</p>
-<ul>
+<p>Family Monitor is a very simple app that works alongside Google Maps. To start (i.e. before using the Family Monitor app), ask your family to allow Google Maps to share their locations with you. (<A href="#Mapssetup">See here for instructions</A>).</p>
+<p>Then, within Family Monitor, define locations that you will use when setting alerts, for example, your home and your children's school. (<A href="#Map">See here for instructions</A>). Once the locations have been defined, you can create alerts in the form of:</p><ul>
 <li>Suwon is further than 800m from home.
 <li>James is closer than 2km to the library.
 <li>Suwon is further than 500m from Me.
@@ -42,9 +42,23 @@
 <p>Right click an alert to delete, edit, reset or share it. Click an alert to view the object of the alert's location on the Map tab.</p>
 <h3>Fired Alerts</h3>
 <p>Right click a fired alert to delete it. Click a fired alert to view the object of the alert's location on the Map tab.</p>
+<a id="Map"></a>
 <h3>Map</h3>
-<p>A browser view of Google Maps.</p>
-
+<p>A browser view of Google Maps. Tapping on a family member or an alert, on the corresponding tabs, will bring you to this tab to show the relevant location.</p>
+<p>This tab is also used to define locations that are to be used in Alerts:
+<h4>If using Windows:</h4>
+<ol>
+<li>Find the desired location in the map (by scrolling, entering an address...) 
+<li>Tap the location icon <i class="material-icons" style="vertical-align:middle;">add_location</i>. The icon will start flashing.
+<li>Long press the desired location on the map and wait for a 'Save with name' dialogue to open. This can take several seconds. If the dialogue doesn't open or has the wrong location, try long pressing again.
+<li>Enter a name for the location and tap OK. The location icon will stop flashing. You should find that the newly defined location can now be used when defining an alert.
+</ol>
+<h4>If using XBox:</h4>
+<ol> 
+<li>Tap the location icon <i class="material-icons" style="vertical-align:middle;">add_location</i>. The icon will start flashing. Enter the address (just the post code / zip code should work) in the dialogue box that pops up.
+<li>Wait for a 'Save with name' dialogue to open. This can take several seconds.
+<li>Enter a name for the location and tap OK. The location icon will stop flashing. You should find that the newly defined location can now be used when defining an alert.
+</ol>
 <a id="Settings"></a>
 <h2>Settings</h2>
 <p>The following can be found on the settings page which is accessible via the cog button.</p>
@@ -71,28 +85,20 @@
 <p>Family Monitor does not ask for, process or store any personal information apart from the names of the family members associated with alerts that the user creates. These alerts are only stored on the device running Family Monitor. In addition, the only network communication is to addresses (URLs) within the Google.com domain and to cyferorg.github.io when displaying this help page.</p>
 <a id="Mapssetup"></a>
 <h2>Google Maps Configuration</h2>
-<p>There are two things that need to be configured on Google Maps for Family Monitor to work effectively, both of which you may already have set up. (The following screenshots are from the Android version of the Google Maps app but the iSOS version is very similar.)</p>
-<ol>
-<li>Location sharing - those family members you wish to monitor must share their locations with you. Each family member may remove the sharing of their location at any time without notifying you, though you will notice that their location is no longer being shared with you. Let us assume you wish to monitor your son's location. You can either directly ask your son to use his Google Maps app (this stage can't be done using a browser) and configure Maps to share his location with you, or you can go into the Google Maps app and send an invitation to your son asking him to share his location. Detailed instructions can be found by googling or, for example, <a href="https://support.google.com/maps/answer/7326816">here</a>.
+<p><i>Note that for earlier versions of Family Monitor, the Google Maps configuration required two steps. There is now only one step since Google's Location Bookmarks are no longer used.</i></p>
+<p>Family Monitor now only requires Google Maps' Location Sharing to be enabled.  (The following screenshots are from the Android version of the Google Maps app but the iOS version is very similar.)</p>
+<li>Location sharing - those family members you wish to monitor must share their locations with you. Each family member may remove the sharing of their location at any time without notifying you, though you will notice that their location is no longer being shared with you. Let us assume you wish to monitor your son's location. You can either (1) directly ask your son to use his Google Maps app (this stage can't be done using a browser) to configure Maps to share his location with you, or (2) you can go into your Google Maps app and send an invitation to your son asking him to share his location. Detailed instructions can be found by googling or, for example, <a href="https://support.google.com/maps/answer/7326816">here</a>.
 <p>
 <img style="margin:20px 20px;border:2px solid black;width:20%" src="Screenshots/share1.png" alt="Shared1" >
 <img style="margin:20px 20px;border:2px solid black;width:20%" src="Screenshots/share2.png" alt="Shared2" >
 <img style="margin:20px 20px;border:2px solid black;width:20%" src="Screenshots/share3.png" alt="Shared3" >
 <img style="margin:20px 20px;border:2px solid black;width:20%" src="Screenshots/share4.png" alt="Shared4" >
 </p>
-<li>Location bookmarks - these are geographic locations created in Google Maps that are available to Family Monitor for defining alert rules, for example, "my son is more than 2km from his school". The location of the school is defined in Google Maps (either using the app or a browser) and then it's used by Family Monitor. These locations can be created either using Google Maps to save the desired locations to the Google Maps <i>Starred Places</i> list or directly within Google's <a href="https://www.google.com/bookmarks">bookmarks page</a>. For the former, find the required location, long press the location, tap the name or address that pops-up, tap Save and then save to the Google Maps "Starred places" list. (More detailed instructions can be found by googling or, for example, <a href="https://support.google.com/maps/answer/3184808">here</a>). The location must be saved to the <i>Starred places</i> list for the location to show up in Family Monitor.
-<p>
-<img style="margin:20px 20px;border:2px solid black;width:20%" src="Screenshots/location1.png" alt="Location1" >
-<img style="margin:20px 20px;border:2px solid black;width:20%" src="Screenshots/location2.png" alt="Location2" >
-<img style="margin:20px 20px;border:2px solid black;width:20%" src="Screenshots/location3.png" alt="Location3" >
-</p>
-<img style="margin:20px 20px;border:2px solid black;width:60%" src="Screenshots/bookmarks.png" alt="Location Bookmarks" >
-</ol>
+
 <a id="FAQ"></a>
 <h2>FAQ</h2>
 <ul>
 <li>Change Google account - Tap the Logout button within Settings.
-<li>Give a location a better (more descriptive) name in the list of objects - Using a browser, go to your <a href="https://www.google.com/bookmarks">Google bookmarks page</a>, click Edit for the desired location and enter whatever you want in the Name field. 
 </ul>
 </body>
 </html>
